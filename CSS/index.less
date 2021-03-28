@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.l {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.header {
+
+    >.logo,
+    .nav,
+    .search,
+    .user {
+        float: left;
+    }
+
+    height: 42px;
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, 0);
+
+    >.nav {
+
+        >ul {
+
+            >li {
+                display: inline-block;
+                margin: 0 23px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    display: inline-block;
+                    font-size: 18px;
+                    line-height: 42px;
+                    padding: 0 8px;
+
+                    &:hover {
+                        color: rgb(0, 164, 254);
+                        border-bottom: 3px solid rgb(0, 164, 254);
+                    }
+                }
+            }
+        }
+    }
+
+
+    >.logo {
+        width: 198px;
+        height: 42px;
+        margin-left: -22px;
+        margin-right: 60px;
+    }
+
+    >.search {
+        margin-left: 70px;
+        height: 42px;
+
+        input,
+        button {
+            display: inline-block;
+            height: 42px;
+        }
+
+        >button {
+            width: 50px;
+            border: 1px solid rgb(0, 164, 255);
+            margin-left: -6px;
+            background-image: url(../IMG/btn.png);
+        }
+
+        >input {
+            position: relative;
+            width: 360px;
+            height: 40px;
+            top: -16px;
+            outline: 1px rgb(0, 164, 255);
+            border: 1px solid rgb(0, 164, 255);
+        }
+
+
+
+    }
+
+    .user {
+        margin-left: 21px;
+
+        >a {
+            display:table-cell;
+            text-decoration: none;
+            color: black;
+            // position: relative;
+
+            >img {
+                // position: absolute;
+                top: 6px;
+                left: 12px;
+                display: inline-block;
+                // margin-top: -3px;
+
+            }
+            
+        }
+    }
+}
