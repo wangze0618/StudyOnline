@@ -1,100 +1,92 @@
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
 .clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
-    height: 0;
-    visibility: hidden;
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
 }
-
 .l {
-    width: 1200px;
-    margin: 0 auto;
+  width: 1200px;
+  margin: 0 auto;
 }
-
 .header {
-    height: 42px;
-    margin: 30px auto;
-    background-color: rgba(0, 0, 0, 0);
+  height: 42px;
+  margin: 30px auto;
+  background-color: rgba(0, 0, 0, 0);
 }
-
-.header>.logo,
+.header > .logo,
 .header .nav,
 .header .search,
 .header .user {
-    float: left;
+  float: left;
 }
-
-.header>.nav>ul>li {
-    display: inline-block;
-    margin: 0 23px;
+.header > .nav > ul > li {
+  display: inline-block;
+  margin: 0 23px;
 }
-
-.header>.nav>ul>li a {
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    font-size: 18px;
-    line-height: 42px;
-    padding: 0 8px;
+.header > .nav > ul > li a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 42px;
+  padding: 0 8px;
 }
-
-.header>.nav>ul>li a:hover {
-    color: #00a4fe;
-    border-bottom: 3px solid #00a4fe;
+.header > .nav > ul > li a:hover {
+  color: #00a4fe;
+  border-bottom: 3px solid #00a4fe;
 }
-
-.header>.logo {
-    width: 198px;
-    height: 42px;
-    margin-left: -22px;
-    margin-right: 60px;
+.header > .logo {
+  width: 198px;
+  height: 42px;
+  margin-left: -22px;
+  margin-right: 60px;
 }
-
-.header>.search {
-    margin-left: 70px;
-    height: 42px;
+.header > .search {
+  margin-left: 70px;
+  height: 42px;
 }
-
-.header>.search input,
-.header>.search button {
-    display: inline-block;
-    height: 42px;
+.header > .search input,
+.header > .search button {
+  display: inline-block;
+  height: 42px;
 }
-
-.header>.search>button {
-    width: 50px;
-    border: 1px solid #00a4ff;
-    margin-left: -6px;
-    background-image: url(../IMG/btn.png);
+.header > .search > button {
+  width: 50px;
+  border: 1px solid #00a4ff;
+  margin-left: -6px;
+  background-image: url(../IMG/btn.png);
 }
-
-.header>.search>input {
-    position: relative;
-    width: 360px;
-    height: 40px;
-    top: -16px;
-    outline: 1px #00a4ff;
-    border: 1px solid #00a4ff;
+.header > .search > input {
+  position: relative;
+  width: 360px;
+  height: 40px;
+  top: -16px;
+  outline: 1px #00a4ff;
+  border: 1px solid #00a4ff;
 }
-
 .header .user {
-    margin-left: 21px;
+  margin-left: 21px;
 }
-
-.header .user>a {
-    display: table-cell;
-    text-decoration: none;
-    color: black;
+.header .user > a {
+  display: table-cell;
+  text-decoration: none;
+  color: black;
 }
-
-.header .user>a>img {
-    top: 6px;
-    left: 12px;
-    display: inline-block;
+.header .user > a > img {
+  top: 6px;
+  left: 12px;
+  display: inline-block;
+}
+.banner {
+  height: 420px;
+  background-color: #1c036c;
+  background-image: url(../IMG/banner2_20190819_210028.png);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
