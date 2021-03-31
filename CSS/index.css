@@ -3,6 +3,9 @@
   padding: 0;
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
 .clearfix::after {
   content: "";
   display: block;
@@ -30,7 +33,6 @@
   margin: 0 23px;
 }
 .header > .nav > ul > li a {
-  text-decoration: none;
   color: black;
   display: inline-block;
   font-size: 18px;
@@ -71,17 +73,23 @@
   border: 1px solid #00a4ff;
 }
 .header .user {
-  margin-left: 21px;
+  margin-left: 10px;
+  float: left;
+  margin-top: 5px;
 }
 .header .user > a {
-  display: table-cell;
   text-decoration: none;
   color: black;
+  font-size: 16px;
 }
 .header .user > a > img {
-  top: 6px;
-  left: 12px;
-  display: inline-block;
+  vertical-align: middle;
+}
+.header .user > a > span {
+  margin-left: 5px;
+}
+.header .user > a > span:hover {
+  border-bottom: 2px solid #00a4ff;
 }
 .banner {
   height: 420px;
@@ -89,4 +97,88 @@
   background-image: url(../IMG/banner2_20190819_210028.png);
   background-position: center center;
   background-repeat: no-repeat;
+}
+.banner > .banList {
+  width: 1200px;
+  margin: 0 auto;
+}
+.banner > .banList > .leftban {
+  float: left;
+  width: 190px;
+  height: 420px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.banner > .banList > .leftban > ul li + li {
+  border-top: 1px solid rgba(126, 124, 124, 0.5);
+}
+.banner > .banList > .leftban > ul > li {
+  height: 45px;
+  width: 150px;
+  padding: 0px 20px;
+  line-height: 45px;
+}
+.banner > .banList > .leftban > ul > li > a {
+  display: block;
+  height: 45px;
+  width: 150px;
+  font-size: 14px;
+  color: white;
+}
+.banner > .banList > .leftban > ul > li > a > span {
+  float: right;
+}
+.banner > .banList > .leftban > ul > li > a:hover {
+  color: #00a4ff;
+}
+.banner > .banList > .rightban {
+  width: 230px;
+  float: right;
+  height: 300px;
+  background-color: #ffffff;
+  margin-top: 50px;
+}
+.banner > .banList > .rightban > .myCurList {
+  height: 49px;
+  width: inherit;
+  background-color: #9bceea;
+}
+.banner > .banList > .rightban > .myCurList > h3 {
+  color: white;
+  text-align: center;
+  line-height: 49px;
+  letter-spacing: 1px;
+}
+.banner > .banList > .rightban > .curList {
+  height: 252px;
+  width: inherit;
+  background-color: #ffffff;
+}
+.banner > .banList > .rightban > .curList li {
+  padding-left: 18px;
+}
+.banner > .banList > .rightban > .curList a {
+  display: block;
+  width: 190px;
+  height: 40px;
+  color: #4e4e4e;
+  padding: 12px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+.banner > .banList > .rightban > .curList .noBottom {
+  padding: 0;
+  margin-top: 7px;
+  border-bottom: none;
+  height: 40px;
+  border: 1px solid #00a4ff;
+  color: #00a4ff;
+  font-weight: 700;
+  text-align: center;
+  line-height: 40px;
+}
+.banner > .banList > .rightban > .curList .curList_p1 {
+  font-size: 16px;
+}
+.banner > .banList > .rightban > .curList .curList_p2 {
+  color: #b1b1b1;
+  font-size: 12px;
 }

@@ -4,6 +4,12 @@
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+@themeColor: rgb(0, 164, 255);
+
 .clearfix::after {
     content: "";
     display: block;
@@ -40,7 +46,6 @@
                 margin: 0 23px;
 
                 a {
-                    text-decoration: none;
                     color: black;
                     display: inline-block;
                     font-size: 18px;
@@ -95,31 +100,136 @@
     }
 
     .user {
-        margin-left: 21px;
+        margin-left: 10px;
+        float: left;
+        margin-top: 5px;
 
         >a {
-            display:table-cell;
             text-decoration: none;
             color: black;
-            // position: relative;
+            font-size: 16px;
 
             >img {
-                // position: absolute;
-                top: 6px;
-                left: 12px;
-                display: inline-block;
-                // margin-top: -3px;
-
+                vertical-align: middle;
             }
-            
+
+            >span {
+                margin-left: 5px;
+
+                &:hover {
+                    border-bottom: 2px solid @themeColor;
+                }
+            }
+
         }
     }
 }
 
-.banner{
+.banner {
     height: 420px;
     background-color: rgb(28, 3, 108);
     background-image: url(../IMG/banner2_20190819_210028.png);
     background-position: center center;
     background-repeat: no-repeat;
+
+    >.banList {
+        width: 1200px;
+        margin: 0 auto;
+
+        >.leftban {
+            float: left;
+            width: 190px;
+            height: 420px;
+            background-color: rgba(0, 0, 0, 0.5);
+
+            >ul {
+                li+li {
+                    border-top: 1px solid rgba(126, 124, 124, 0.5);
+                }
+
+                >li {
+                    height: 45px;
+                    width: 150px;
+                    padding: 0px 20px;
+                    line-height: 45px;
+
+                    >a {
+                        display: block;
+                        height: 45px;
+                        width: 150px;
+                        font-size: 14px;
+                        color: white;
+
+                        >span {
+                            float: right;
+                        }
+
+                        &:hover {
+                            color: @themeColor;
+                        }
+                    }
+                }
+            }
+        }
+
+        >.rightban {
+            width: 230px;
+            float: right;
+            height: 300px;
+            background-color: rgb(255, 255, 255);
+            margin-top: 50px;
+
+            >.myCurList {
+                height: 49px;
+                width: inherit;
+                background-color: rgb(155, 206, 234);
+
+                >h3 {
+                    color: white;
+                    text-align: center;
+                    line-height: 49px;
+                    letter-spacing: 1px;
+                }
+            }
+
+            >.curList {
+                height: 252px;
+                width: inherit;
+                background-color: rgb(255, 255, 255);
+
+                li {
+                    padding-left: 18px;
+                }
+
+                a {
+                    display: block;
+                    width: 190px;
+                    height: 40px;
+                    color: rgb(78, 78, 78);
+                    padding: 12px 0;
+                    border-bottom: 1px solid rgb(234, 234, 234);
+                }
+
+                .noBottom{
+                    padding: 0;
+                    margin-top: 7px;
+                    border-bottom: none;
+                    height: 40px;
+                    border: 1px solid rgb(0, 164, 255);
+                    color: rgb(0, 164, 255);
+                    font-weight: 700;
+                    text-align: center;
+                    line-height: 40px;
+                }
+                .curList_p1 {
+                    font-size: 16px;
+                }
+
+                .curList_p2 {
+                    color: rgb(177, 177, 177);
+                    font-size: 12px;
+                }
+            }
+        }
+    }
 }
