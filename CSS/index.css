@@ -6,6 +6,9 @@
 a {
   text-decoration: none;
 }
+.noBorder {
+  border: none !important;
+}
 .clearfix::after {
   content: "";
   display: block;
@@ -46,8 +49,8 @@ a {
 .header > .logo {
   width: 198px;
   height: 42px;
-  margin-left: -22px;
-  margin-right: 60px;
+  margin-left: 2px;
+  margin-right: 40px;
 }
 .header > .search {
   margin-left: 70px;
@@ -181,4 +184,34 @@ a {
 .banner > .banList > .rightban > .curList .curList_p2 {
   color: #b1b1b1;
   font-size: 12px;
+}
+.courseRecom {
+  width: 1200px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  line-height: 60px;
+  text-align: center;
+  margin-top: 5px;
+  box-shadow: 0px 1px 3px 3px #eaecee;
+}
+.courseRecom > ul {
+  margin: 0px 20px;
+}
+.courseRecom > ul > li {
+  float: left;
+  height: 60px;
+  vertical-align: middle;
+}
+.courseRecom > ul > li > a {
+  border-left: 1px solid #bfbfbf;
+  font-size: 16px;
+  color: black;
+  padding: 0 38px;
+  height: 30px;
+  line-height: 60px;
+}
+.courseRecom > a {
+  color: #00a4ff;
+  float: right;
+  margin-right: 50px;
 }
