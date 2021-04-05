@@ -15,6 +15,10 @@ a {
     border: none !important;
 }
 
+.noRightMargin {
+    margin-right: 0px !important;
+}
+
 .clearfix::after {
     content: "";
     display: block;
@@ -271,10 +275,83 @@ a {
         }
     }
 
-
     >a {
         color: @themeColor;
         float: right;
         margin-right: 50px;
+    }
+}
+
+.recomList {
+    width: 1200px;
+    // border: 1px solid red;
+    margin: 10px auto 0px auto;
+
+    >.box1 {
+        // height: 40px;
+        // line-height: 40px;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        // border: 1px solid blue;
+
+        >h3 {
+            color: rgb(106, 107, 107);
+            float: left;
+        }
+
+        >a {
+            color: rgb(167, 167, 167);
+            float: right;
+        }
+    }
+}
+
+.recomContainer {
+    width: 1200px;
+    margin: 0 auto;
+
+    >ul {
+
+        >li {
+            width: 228px;
+            height: 270px;
+            background: #ffffff;
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0px 4px 8px 5px rgba(223, 225, 227, 0.8);
+
+            >a {
+                color: rgb(5, 5, 5);
+
+                >img {
+                    width: 100%;
+                }
+            }
+
+            h4 {
+                margin: 10px 13px;
+                font-size: 14px;
+                font-family: "微软雅黑", Courier, monospace;
+            }
+
+            span {
+                font-size: 12px;
+            }
+
+            span:nth-of-type(1) {
+                color: rgb(255, 138, 67);
+                margin-left: 13px;
+            }
+
+            span:nth-of-type(2) {
+                color: rgb(153, 153, 153);
+            }
+
+            span:nth-of-type(3) {
+                color: rgb(153, 153, 153);
+            }
+
+        }
     }
 }

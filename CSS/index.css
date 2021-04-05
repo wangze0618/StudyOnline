@@ -9,6 +9,9 @@ a {
 .noBorder {
   border: none !important;
 }
+.noRightMargin {
+  margin-right: 0px !important;
+}
 .clearfix::after {
   content: "";
   display: block;
@@ -214,4 +217,57 @@ a {
   color: #00a4ff;
   float: right;
   margin-right: 50px;
+}
+.recomList {
+  width: 1200px;
+  margin: 10px auto 0px auto;
+}
+.recomList > .box1 {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.recomList > .box1 > h3 {
+  color: #6a6b6b;
+  float: left;
+}
+.recomList > .box1 > a {
+  color: #a7a7a7;
+  float: right;
+}
+.recomContainer {
+  width: 1200px;
+  margin: 0 auto;
+}
+.recomContainer > ul > li {
+  width: 228px;
+  height: 270px;
+  background: #ffffff;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 8px 5px rgba(223, 225, 227, 0.8);
+}
+.recomContainer > ul > li > a {
+  color: #050505;
+}
+.recomContainer > ul > li > a > img {
+  width: 100%;
+}
+.recomContainer > ul > li h4 {
+  margin: 10px 13px;
+  font-size: 14px;
+  font-family: "微软雅黑", Courier, monospace;
+}
+.recomContainer > ul > li span {
+  font-size: 12px;
+}
+.recomContainer > ul > li span:nth-of-type(1) {
+  color: #ff8a43;
+  margin-left: 13px;
+}
+.recomContainer > ul > li span:nth-of-type(2) {
+  color: #999999;
+}
+.recomContainer > ul > li span:nth-of-type(3) {
+  color: #999999;
 }
