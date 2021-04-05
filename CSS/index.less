@@ -4,6 +4,10 @@
     list-style: none;
 }
 
+body {
+    background-color: rgb(243, 245, 247);
+}
+
 a {
     text-decoration: none;
 }
@@ -102,10 +106,8 @@ a {
             top: -16px;
             outline: 1px rgb(0, 164, 255);
             border: 1px solid rgb(0, 164, 255);
+            background-color: rgb(243, 245, 247);
         }
-
-
-
     }
 
     .user {
@@ -129,7 +131,6 @@ a {
                     border-bottom: 2px solid @themeColor;
                 }
             }
-
         }
     }
 }
@@ -260,9 +261,6 @@ a {
             float: left;
             height: 60px;
             vertical-align: middle;
-            // margin:0px 20px;
-
-
 
             >a {
                 border-left: 1px solid rgb(191, 191, 191);
@@ -284,15 +282,11 @@ a {
 
 .recomList {
     width: 1200px;
-    // border: 1px solid red;
     margin: 10px auto 0px auto;
 
     >.box1 {
-        // height: 40px;
-        // line-height: 40px;
         padding-top: 20px;
         padding-bottom: 15px;
-        // border: 1px solid blue;
 
         >h3 {
             color: rgb(106, 107, 107);
@@ -351,7 +345,70 @@ a {
             span:nth-of-type(3) {
                 color: rgb(153, 153, 153);
             }
+        }
+    }
+}
 
+footer {
+    height: 472px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+    >.endContainer {
+        width: 1200px;
+        margin: 0 auto;
+
+        >.endLeft {
+            margin-top: 35px;
+            width: 480px;
+            font-size: 12px;
+            float: left;
+
+            img {
+                margin-bottom: 10px;
+            }
+
+            >p {
+                margin: 3px 0px;
+                color: rgb(102, 102, 102);
+            }
+
+            >a:nth-of-type(2) {
+                display: block;
+                width: 119px;
+                height: 35px;
+                border: 1px solid @themeColor;
+                line-height: 35px;
+                text-align: center;
+                color: @themeColor;
+                margin: 15px 0px;
+            }
+        }
+
+        >.endRight {
+            float: right;
+            margin-top: 35px;
+
+            >div {
+                float: right;
+
+                >dl {
+                    margin-left: 100px;
+                }
+
+                a {
+                    display: block;
+                    font-size: 12px;
+                    color: #333;
+                    margin-bottom: 5px;
+                    margin-top: 2px;
+                }
+
+                dt {
+                    font-size: 16px;
+                    color: #333;
+                }
+            }
         }
     }
 }

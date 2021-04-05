@@ -3,6 +3,9 @@
   padding: 0;
   list-style: none;
 }
+body {
+  background-color: #f3f5f7;
+}
 a {
   text-decoration: none;
 }
@@ -77,6 +80,7 @@ a {
   top: -16px;
   outline: 1px #00a4ff;
   border: 1px solid #00a4ff;
+  background-color: #f3f5f7;
 }
 .header .user {
   margin-left: 10px;
@@ -270,4 +274,57 @@ a {
 }
 .recomContainer > ul > li span:nth-of-type(3) {
   color: #999999;
+}
+footer {
+  height: 472px;
+  width: 100%;
+  background-color: #ffffff;
+}
+footer > .endContainer {
+  width: 1200px;
+  margin: 0 auto;
+}
+footer > .endContainer > .endLeft {
+  margin-top: 35px;
+  width: 480px;
+  font-size: 12px;
+  float: left;
+}
+footer > .endContainer > .endLeft img {
+  margin-bottom: 10px;
+}
+footer > .endContainer > .endLeft > p {
+  margin: 3px 0px;
+  color: #666666;
+}
+footer > .endContainer > .endLeft > a:nth-of-type(2) {
+  display: block;
+  width: 119px;
+  height: 35px;
+  border: 1px solid #00a4ff;
+  line-height: 35px;
+  text-align: center;
+  color: #00a4ff;
+  margin: 15px 0px;
+}
+footer > .endContainer > .endRight {
+  float: right;
+  margin-top: 35px;
+}
+footer > .endContainer > .endRight > div {
+  float: right;
+}
+footer > .endContainer > .endRight > div > dl {
+  margin-left: 100px;
+}
+footer > .endContainer > .endRight > div a {
+  display: block;
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
+footer > .endContainer > .endRight > div dt {
+  font-size: 16px;
+  color: #333;
 }
