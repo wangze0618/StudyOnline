@@ -328,3 +328,17 @@ footer > .endContainer > .endRight > div dt {
   font-size: 16px;
   color: #333;
 }
+.recomContainer > ul > li {
+  position: relative;
+}
+.recomContainer > ul > li > .new {
+  width: 40px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  background-image: url(../IMG/new.png);
+  background-repeat: no-repeat;
+  z-index: 10;
+  top: 8px;
+  right: -4px;
+}
